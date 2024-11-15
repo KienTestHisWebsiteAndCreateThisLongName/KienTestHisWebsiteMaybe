@@ -1,41 +1,77 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    font-size: 16px; /* Base font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
+/* Header Styles */
 header {
     background: #007acc;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem 1rem; /* Increased padding for better spacing */
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    color: #007acc;
+    margin: 0.5rem 0; /* Consistent margin for headings */
 }
 
 h2 {
-    color: #007acc;
+    font-size: 2rem; /* Larger font size for h2 */
 }
 
+/* List Styles */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+li {
+    margin: 0.5rem 0; /* Space between list items */
+}
+
+/* Link Styles */
 a {
     color: #007acc;
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 a:hover {
     text-decoration: underline;
+    color: #005f99; /* Darker shade on hover */
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem; /* Increased padding for better spacing */
     background: #333;
     color: white;
     margin-top: 1rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+
+    header, footer {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller h2 on mobile */
+    }
 }
